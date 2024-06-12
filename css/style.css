@@ -214,8 +214,8 @@ transform:
 
 
 .s2dog{position: absolute; top:570px; left: 100px; transform: rotate(-0.41deg); z-index: -2}
-.s2cat{position: absolute; top:300px; left: 750px; transform: rotate(0.24deg); z-index: -2}
-.s2hamster{position: absolute; top:400px; left: 1300px; transform: rotate(0.34deg); z-index: -2}
+.s2cat{position: absolute; top:100px; left: 750px; transform: rotate(0.24deg); z-index: -2}
+.s2hamster{position: absolute; top:200px; left: 1300px; transform: rotate(0.34deg); z-index: -2}
 
 /*section3*/
 .s3wrap{margin: auto; position: relative; text-align: center;}
