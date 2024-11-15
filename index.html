@@ -445,30 +445,7 @@
 	
 	</section>
 
-	<!-- section13 -->
-
-	<section id="d" class="fullwrap13 white">
-	<div class=" s13flex">
-	<div> 
- 	<img class="s13img" src="img/s131.png">
- 	<img class="s13img"  src="img/s132.png">
- 	<img class="s13img"  src="img/s133.png">
- 	<img class="s13img"  src="img/s134.png">
-	</div>
-	<div> 
- 	<p class="s13s">입양 가능한 보호소</p>
- 	<p class="s13t">ANIMAL SHELTERS AVAILABLE FOR ADOPTION</p>
-	</div>
-	<div> 
- 	<img class="s13img"  src="img/s135.png">
- 	<img class="s13img"  src="img/s136.png">
- 	<img class="s13img"  src="
- 	img/s137.png">
- 	<img class="s13img"  src="img/s138.png">
-	</div>
-</div>
-</section>
-
+	
 <!-- section14 -->
 
 	<section>
@@ -587,25 +564,25 @@ window.onload = () => {
     });
 });
 
-	 const fullwrap9 = document.querySelector('.fullwrap9');
+	 
+const fullwrap9 = document.querySelector('.fullwrap9');
 const s9Elements = document.querySelectorAll('.s9pink, .s9blue');
 
-fullwrap9.addEventListener('mouseenter', () => {
-    s9Elements.forEach((element, index) => {
-        // Adjust transformation values based on your preference
-        let xFactor = -0.002 + index * 0.0005; // Example calculation
-        let yFactor = -0.002 + index * 0.0005; // Example calculation
-        element.style.transform = `translateX(calc(var(--mouse-x) * ${xFactor}vw)) translateY(calc(var(--mouse-y) * ${yFactor}vw))`;
-    });
+// 스크롤 이벤트 감지
+window.addEventListener('scroll', () => {
+    const rect = fullwrap9.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // fullwrap9가 화면에 들어왔을 때 애니메이션 실행
+    if (rect.top < windowHeight && rect.bottom > 0) {
+        s9Elements.forEach((element, index) => {
+            // 최종 변환 값 설정
+            let xFactor = -0.002 + index * 0.0005; // X 축 변환 값
+            let yFactor = -0.002 + index * 0.0005; // Y 축 변환 값
+            element.style.transform = `translateX(calc(var(--mouse-x) * ${xFactor}vw)) translateY(calc(var(--mouse-y) * ${yFactor}vw))`;
+        });
+    }
 });
-
-fullwrap9.addEventListener('mouseleave', () => {
-    s9Elements.forEach((element) => {
-        element.style.transform = 'translateX(0) translateY(0)';
-    });
-});
-
-
 
 
 
