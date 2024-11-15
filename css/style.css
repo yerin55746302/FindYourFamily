@@ -405,7 +405,7 @@ transform:
 
 /*section12*/
 .blackbg{background-color: #1A1A1A; z-index: -3; position: relative;}
-.white{background-color: white; z-index: -3; position: relative; overflow-x: hidden;}
+.white{background-color:  #1A1A1A;; z-index: -3; position: relative; overflow-x: hidden;}
 .fullwrap12{overflow-x: hidden; position: relative;}
 .s12s{font-size: 30px; font-family: 'Pretendard-Regular'; padding-top: 300px; color: #EBE8E2; padding-bottom: 45px}
 
