@@ -338,14 +338,6 @@ transform:
 .s9f { position: absolute; top: 31.81vw; left: 11.94vw; transform: rotate(-50deg); }
 .s9g { position: absolute; top: 26.74vw; left: 78.81vw; transform: rotate(-20deg); }
 
-.fullwrap9.animate-elements .s9a { animation: fall-s9a 1s forwards; }
-.fullwrap9.animate-elements .s9b { animation: fall-s9b 1s forwards; }
-.fullwrap9.animate-elements .s9c { animation: fall-s9c 1s forwards; }
-.fullwrap9.animate-elements .s9d { animation: fall-s9d 1s forwards; }
-.fullwrap9.animate-elements .s9e { animation: fall-s9e 1s forwards; }
-.fullwrap9.animate-elements .s9f { animation: fall-s9f 1s forwards; }
-.fullwrap9.animate-elements .s9g { animation: fall-s9g 1s forwards; }
-
 
 .splusp{font-size: 32px; padding-top: 1500px; text-align: center; padding-bottom: 20px; color: #F25C51;  font-family: 'Pretendard-Bold'; font-weight: 600;}
 .splusb{font-size: 100px; line-height: 1.1; text-align: center; font-family: 'Pretendard-Bold'; font-weight: 600; word-break: keep-all; width: 1000px}
