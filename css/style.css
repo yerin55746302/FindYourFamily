@@ -256,30 +256,6 @@ transform:
 .s6flex3{display: flex; width: 980px; list-style-type: none; justify-content: space-between;  padding-top: 253px; padding-bottom: 214px}
 .s6p{color: #DDD6CA; font-size: 60px; width: 655px; word-break: keep-all; margin-left: 0; font-family: 'Pretendard-Bold';}
 .s6pblue{color: #3273D0; font-size: 60px; font-family: 'Pretendard-Bold';}
-.s61
-{transform:
-    translateX(calc(var(--mouse-x) * -0.002vw))
-    translateY(calc(var(--mouse-y) * -0.002vw))}
-.s62
-{transform:
-    translateX(calc(var(--mouse-x) * -0.0025vw))
-    translateY(calc(var(--mouse-y) * -0.0025vw))}
-.s63
-{transform:
-    translateX(calc(var(--mouse-x) * -0.001vw))
-    translateY(calc(var(--mouse-y) * -0.001vw))}
-.s64
-{transform:
-    translateX(calc(var(--mouse-x) * -0.0022vw))
-    translateY(calc(var(--mouse-y) * -0.0022vw))}
-.s65
-{transform:
-    translateX(calc(var(--mouse-x) * -0.001vw))
-    translateY(calc(var(--mouse-y) * -0.001vw))}
-.s66
-{transform:
-    translateX(calc(var(--mouse-x) * -0.0024vw))
-    translateY(calc(var(--mouse-y) * -0.0024vw))}
 
 .wrap6{width: 1000px; margin: auto; position: relative;}
 
