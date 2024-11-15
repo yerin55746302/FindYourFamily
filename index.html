@@ -587,6 +587,25 @@ window.onload = () => {
     });
 });
 
+	 const fullwrap9 = document.querySelector('.fullwrap9');
+const s9Elements = document.querySelectorAll('.s9pink, .s9blue');
+
+fullwrap9.addEventListener('mouseenter', () => {
+    s9Elements.forEach((element, index) => {
+        // Adjust transformation values based on your preference
+        let xFactor = -0.002 + index * 0.0005; // Example calculation
+        let yFactor = -0.002 + index * 0.0005; // Example calculation
+        element.style.transform = `translateX(calc(var(--mouse-x) * ${xFactor}vw)) translateY(calc(var(--mouse-y) * ${yFactor}vw))`;
+    });
+});
+
+fullwrap9.addEventListener('mouseleave', () => {
+    s9Elements.forEach((element) => {
+        element.style.transform = 'translateX(0) translateY(0)';
+    });
+});
+
+
 
 
 
