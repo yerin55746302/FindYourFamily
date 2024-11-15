@@ -568,19 +568,17 @@ window.onload = () => {
 const fullwrap9 = document.querySelector('.fullwrap9');
 const s9Elements = document.querySelectorAll('.s9pink, .s9blue');
 
-// 스크롤 이벤트 감지
 window.addEventListener('scroll', () => {
     const rect = fullwrap9.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
     // fullwrap9가 화면에 들어왔을 때 애니메이션 실행
     if (rect.top < windowHeight && rect.bottom > 0) {
-        s9Elements.forEach((element, index) => {
-            // 최종 변환 값 설정
-            let xFactor = -0.002 + index * 0.0005; // X 축 변환 값
-            let yFactor = -0.002 + index * 0.0005; // Y 축 변환 값
-            element.style.transform = `translateX(calc(var(--mouse-x) * ${xFactor}vw)) translateY(calc(var(--mouse-y) * ${yFactor}vw))`;
-        });
+        // 애니메이션 클래스 추가
+        fullwrap9.classList.add('animate-elements');
+    } else {
+        // 화면에서 벗어났을 때 애니메이션 클래스 제거 (필요에 따라 설정)
+        fullwrap9.classList.remove('animate-elements');
     }
 });
 
